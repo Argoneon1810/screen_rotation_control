@@ -92,4 +92,5 @@ tray_icon = Icon(
 tray_icon.run()
 
 
+# Build command:
 # pyinstaller -w -F main.py
