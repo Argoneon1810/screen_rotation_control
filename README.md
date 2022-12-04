@@ -31,9 +31,15 @@ or simply, right-click on a tray icon and select a desired screen.
 
 Right-click on tray icon and click 'Exit'
 
-# Packages Used
+# Appendices
+
+## Packages Used
 
 1. pynput (https://pynput.readthedocs.io/en/latest/index.html)
 2. pystray (https://github.com/moses-palmer/pystray)
 3. pillow (https://pillow.readthedocs.io/en/stable/index.html)
 4. rotate-screen (https://github.com/danny-burrows/rotate-screen)
+
+## Icon
+
+1. Material Icon: Screen Rotation (https://fonts.google.com/icons?selected=Material%20Symbols%20Outlined%3Ascreen_rotation%3AFILL%400%3Bwght%40400%3BGRAD%400%3Bopsz%4048)
