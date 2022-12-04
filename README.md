@@ -21,7 +21,8 @@ Simply download two files as below:
 ## Selecting a Screen to Rotate
 
 - [Ctrl + Alt + 1] -> Select screen #1
-~
+- [Ctrl + Alt + 2] -> Select screen #2 (if any)
+- ...
 - [Ctrl + Alt + 9] -> Select screen #9 (if any)
 
 or simply, right-click on a tray icon and select a desired screen.
