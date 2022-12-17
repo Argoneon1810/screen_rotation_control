@@ -12,6 +12,7 @@ import sys
 
 
 _key_active_screen = "active_screen"
+_icon_file_name = "icon_rotate.ico"
 _key_language = "lang"
 _value_orientation_landscape = "landscape"
 _value_orientation_landscape_flipped = "landscape_flipped"
@@ -219,7 +220,7 @@ def init_and_start_tray_icon():
     global tray_icon
     tray_icon = Icon(
         lambda text: get_text(tr.key_application_title),
-        PIL.Image.open("icon_rotate.png"),
+        PIL.Image.open(_icon_file_name),
         menu=Menu(
             MenuItem(
                 lambda text: get_text(tr.key_apply_rotation_to),
