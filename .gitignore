@@ -1,0 +1,10 @@
+build/
+build/main/
+build/main/localpycs/
+
+dist/
+
+venv/
+
+.idea/
+.idea/inspectionProfiles/
