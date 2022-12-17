@@ -18,6 +18,8 @@ Simply download two files as below:
 - [Ctrl + Alt + Arrow_Left] -> portrait
 - [Ctrl + Alt + Arrow_Right] -> portrait (flipped)
 
+or simply, right-click on a tray icon and select a desired screen orientation under menu "Screen Orientation".
+
 ## Selecting a Screen to Rotate
 
 - [Ctrl + Alt + 1] -> Select screen #1
@@ -25,7 +27,7 @@ Simply download two files as below:
 - ...
 - [Ctrl + Alt + 9] -> Select screen #9 (if any)
 
-or simply, right-click on a tray icon and select a desired screen.
+or simply, right-click on a tray icon and select a desired screen under menu "Apply rotation to".
 
 ## Exiting
 

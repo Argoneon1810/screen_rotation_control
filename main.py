@@ -176,7 +176,7 @@ tray_icon = Icon(
             )
         ),
         MenuItem(
-            "Screen Orientation:",
+            "Screen orientation:",
             Menu(
                 MenuItem(
                     "Landscape",
