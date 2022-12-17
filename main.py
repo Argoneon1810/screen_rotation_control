@@ -178,50 +178,23 @@ tray_icon = Icon(
         MenuItem(
             "Screen orientation:",
             Menu(
-                MenuItem(
-                    "Landscape",
-                    set_orientation_state(
-                        get_active_screen(),
-                        _orientation_value_landscape
-                    ),
-                    checked=get_orientation_state(
-                        _orientation_value_landscape
-                    ),
-                    radio=True
-                ),
-                MenuItem(
-                    "Landscape_Flipped",
-                    set_orientation_state(
-                        get_active_screen(),
-                        _orientation_value_landscape_flipped
-                    ),
-                    checked=get_orientation_state(
-                        _orientation_value_landscape_flipped
-                    ),
-                    radio=True
-                ),
-                MenuItem(
-                    "Portrait",
-                    set_orientation_state(
-                        get_active_screen(),
-                        _orientation_value_portrait
-                    ),
-                    checked=get_orientation_state(
-                        _orientation_value_portrait
-                    ),
-                    radio=True
-                ),
-                MenuItem(
-                    "Portrait_Flipped",
-                    set_orientation_state(
-                        get_active_screen(),
-                        _orientation_value_portrait_flipped
-                    ),
-                    checked=get_orientation_state(
-                        _orientation_value_portrait_flipped
-                    ),
-                    radio=True
-                ),
+                lambda: (
+                    MenuItem(
+                        title,
+                        set_orientation_state(
+                            get_active_screen(),
+                            orientation
+                        ),
+                        checked=get_orientation_state(orientation),
+                        radio=True
+                    ) for title, orientation in
+                    {
+                        "Landscape": _orientation_value_landscape,
+                        "Landscape_Flipped": _orientation_value_landscape_flipped,
+                        "Portrait": _orientation_value_portrait,
+                        "Portrait_Flipped": _orientation_value_portrait_flipped
+                    }.items()
+                )
             )
         ),
         MenuItem("Exit", on_click_exit)
