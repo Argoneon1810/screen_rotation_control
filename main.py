@@ -42,7 +42,11 @@ def get_active_screen():
 
 
 def get_active_screen_index():
-    return _display_index_to_apply_rotation - 1
+    t = _display_index_to_apply_rotation - 1
+    if t > len(_displays):
+        return t
+    else:
+        return 0
 
 
 def get_default_settings():
@@ -287,4 +291,4 @@ main()
 
 
 # Build command:
-# pyinstaller -w -F main.py
+# pyinstaller -w -F --icon main.py
